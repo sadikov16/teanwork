@@ -1,0 +1,143 @@
+footer{
+    padding-top: 45px;
+    background-color: $bg-color;
+}
+.footer__wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .text__wrapper{
+        display: flex;
+        justify-content: space-between;
+        gap: 120px;
+        .link__items{
+            display: flex;
+            gap: 70px;
+            margin-top: 25px;
+            
+            .pages__link{
+                font-size: 18px;
+                line-height: 28px;
+                
+                .footer__link{
+                    color: $text-color;
+                    transition: 0.4s;
+                    
+                    &:hover{
+                        transition: 0.1s;
+                        transform: scale(1.2);
+                        padding: 5px 10px;
+                        border: 2px solid $text-color-hover;
+                        border-radius: 5px;
+                        box-shadow: 0 0 10px $text-color-hover;
+                        color: $text-color-hover;
+                    }
+                    
+                    &:active{
+                        background-color: $text-color;
+                        color: $text-color-active;
+                    }
+                }
+            }
+        }
+    }
+    .footer__information{
+        .footer__information-text{
+            font-size: $text-size;
+            line-height: $text-line-hieght;
+            color: $text-color;
+            opacity: 60%;
+            .footer__information-link{
+                color: $text-color;
+                border-bottom: 2px solid blue;
+                transition: 0.4s;
+                &:hover{
+                    color: yellow;
+                    transition: 0.2s;
+                }
+                &:active{
+                    border-bottom: none;
+                    color: gold;
+                }
+            }
+        }
+    }
+    .social-networks__links{
+        flex-direction: column;
+        display: flex;
+        .social-networks__links-images{
+            justify-content: flex-end;
+            display: flex;
+            gap: 16px;
+        }
+        .social--networks__text{
+            font-size: $text-size;
+            line-height: $text-line-hieght;
+            color: $text-color;
+            opacity: 60%;
+            margin-top: 50px;
+        }
+    }
+}
+@media screen and (min-width: 426px) and (max-width:768px) {
+    footer{
+        .footer__container{
+            .footer__wrapper{
+                flex-direction: column;
+                display: flex;
+                .footer__information{
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                .social-networks__links{
+                    margin-top: 32px;
+                    display: flex;
+                    justify-content: space-between;
+                    .social-networks__links-images{
+                        display: flex;
+                        justify-content: flex-start;
+                    }
+                    .social--networks__text{
+                        text-align: end;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    footer{
+        .footer__container{
+            .footer__wrapper{
+                flex-direction: column;
+                display: flex;
+                .text__wrapper{
+                    display: flex;
+                    align-items: center;
+                    gap: 24px;
+                    flex-direction: column;
+                    .footer__information{
+                        display: flex;
+                        justify-content: flex-end;
+                        .footer__information-text{
+                            text-align: center;
+                        }
+                    }
+                }
+                .social-networks__links{
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 32px;
+                    display: flex;
+                    justify-content: space-between;
+                    .social--networks__text{
+                        margin: 0;
+                    }
+                }
+                
+            }
+        }
+    }
+}

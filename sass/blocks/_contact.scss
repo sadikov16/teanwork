@@ -1,0 +1,124 @@
+.contact{
+    background: #014E56;
+    padding-bottom: 88px ;
+    .container{
+        background-color: #014E56;
+        max-width: 1440px;
+        margin: 0 auto;
+        .contact__img1{
+            position: absolute;
+            left: -10%;
+        }
+        .contact__img2{
+            position: absolute;
+            right: -10%;
+            bottom: 0;
+        }
+        .big__box{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            gap: 32px;
+            .contact__box{
+                .contact__subbox{
+                    .subbox__text{
+                        margin-top: 102px;
+                        font-family: 'Livvic';
+                        font-weight: 700;
+                        font-size: 64px;
+                        line-height: 100px;
+                        color: #FFFFFF;
+                    }
+                    .subbox__text2{
+                        margin: 16px 0 32px;
+                        font-family: 'Livvic';
+                        font-weight: 700;
+                        font-size: 32px;
+                        line-height: 48px;
+                        color: #F67E7E;
+                    }
+                    .advantages__box{
+                        margin-top: 8px;
+                        display: flex;
+                        gap: 23px;
+                        align-items: center;
+                        .advantages__text{
+                            font-family: 'Livvic';
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 28px;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+            .input__box{
+                max-width: 540px;
+                margin-top: 120px;
+                .input{
+                    font-family: 'Livvic';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 25px;
+                    letter-spacing: -0.115385px;
+                    color: #FFFFFF;
+                    mix-blend-mode: normal;
+                    opacity: 0.6;
+                    margin-top: 24px;
+                    width: 400px;
+                    border: none;
+                    background: #014E56;
+                }
+                hr{
+                    margin-top: 16px;
+                }
+                .hr2{
+                    margin-top: 60px;
+                }
+                .contact__btn{
+                    font-family: 'Livvic';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: #004047;
+                    background: #FFFFFF;
+                    border: 2px solid #FFFFFF;
+                    border-radius: 24px;
+                    padding: 10px 32px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 426px) and (max-width:768px) {
+    .contact{
+        .container{
+            .big__box{
+                flex-direction: column;
+                align-items: center;
+               .input__box{
+                max-width: 480px;
+               }
+            }
+        }
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .contact{
+        .container{
+            .big__box{
+                margin: 0 auto;
+                flex-direction: column;
+                align-items: center;
+                .input__box{
+                    max-width: 320px;
+                    .input{
+                        max-width: 320px;
+                    }
+                }
+            }
+        }
+    }
+}
